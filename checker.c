@@ -26,10 +26,9 @@ int chargecheck(float chargeRate){
 
 int batteryIsOk(float temperature, float soc, float chargeRate) {
    return tempcheck(temperature) && soccheck(soc) && chargecheck(chargeRate);
-    
 }
 
 int main() {
   assert(batteryIsOk(25, 70, 0.7));
-  assert(!batteryIsOk(50, 85, 1));
+  assert(!batteryIsOk(50, 85, 0));
 }
