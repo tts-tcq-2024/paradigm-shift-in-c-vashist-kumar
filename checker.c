@@ -25,9 +25,10 @@ int chargecheck(float chargeRate){
 
 
 int batteryIsOk(float temperature, float soc, float chargeRate) {
-    soccheck(soc);
-    tempcheck(temperature);
-    chargecheck(chargeRate);
+    if(soccheck(soc))
+    else if(tempcheck(temperature))
+    else(chargecheck(chargeRate))
+        
 
     
 }
