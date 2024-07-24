@@ -32,7 +32,7 @@ bool displaySocGerman(int language){
   return false;//addition of language is possible in future here
 }
 
-bool dispalySoc(int language){
+bool displaySoc(int language){
   if(language == 1){
     printf("State of Charge out of range!\n");
     return true;
@@ -48,7 +48,7 @@ bool displayChargeRateGerman(int language){
   return false;//addition of language is possible in future here
 }
 
-bool dispalyChargeRate(int language){
+bool displayChargeRate(int language){
   if(language == 1){
     printf("Charge Rate out of range!\n");
     return true;
