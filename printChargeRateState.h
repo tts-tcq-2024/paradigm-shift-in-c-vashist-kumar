@@ -13,5 +13,5 @@ bool dispalyChargeRate(int language){
     printf("Charge Rate out of range!\n");
     return true;
   }
-  displayTemperatureGerman(language);
+  displayChargeRateGerman(language);
 }
