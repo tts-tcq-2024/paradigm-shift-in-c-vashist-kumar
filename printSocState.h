@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-bool displayTemperatureGerman(int language){
+bool displaySocGerman(int language){
   if(language == 2){
     printf("Ladezustand außerhalb des Bereichs!\n");
     return true;
@@ -8,7 +8,7 @@ bool displayTemperatureGerman(int language){
   //addition of language is possible in future here
 }
 
-bool dispalyTemperature(int language){
+bool dispalySoc(int language){
   if(language == 1){
     printf("State of Charge out of range!\n");
     return true;
