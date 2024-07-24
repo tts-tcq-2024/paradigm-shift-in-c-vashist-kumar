@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+bool dispalySoc(int language);
 
 bool displaySocGerman(int language){
   if(language == 2){
