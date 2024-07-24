@@ -7,7 +7,7 @@ bool displayChargeRateGerman(int language){
     printf("Laderate außerhalb des Bereichs!\n");
     return true;
   }
-  //addition of language is possible in future here
+  return false;//addition of language is possible in future here
 }
 
 bool dispalyChargeRate(int language){
