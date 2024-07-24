@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 bool displayTemperatureGerman(int language){
   if(language == 2){
