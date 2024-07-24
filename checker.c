@@ -1,25 +1,24 @@
 #include <stdio.h>
 #include <assert.h>
+#include "printMessage.h"
 
 int tempcheck(float temperature,int language){
     if(temperature < 0 || temperature > 45){
-        displayMessage(language);
+        displayTemperature(language);
         return 0;
     }
     return 1;
 }
 int soccheck(float soc,int language){
     if(soc < 20 || soc > 80){
-        displayMessage(language);
-        printf("State of Charge out of range!\n");
+        displaySoc(language);
         return 0;
     }
     return 1;
 }
 int chargecheck(float chargeRate,int language){
     if(chargeRate > 0.8){
-         displayMessage(language);
-        printf("Charge Rate out of range!\n");
+         displayChargeRate(language);
         return 0;
     }
     return 1;
