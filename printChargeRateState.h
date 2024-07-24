@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 bool displayChargeRateGerman(int language){
   if(language == 2){
