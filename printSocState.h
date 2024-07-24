@@ -13,5 +13,5 @@ bool dispalySoc(int language){
     printf("State of Charge out of range!\n");
     return true;
   }
-  displayTemperatureGerman(language);
+  displaySocGerman(language);
 }
