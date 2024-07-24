@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <assert.h>
 #include <stdbool.h>
-
+bool dispalyTemperature(int language);
+bool displayTemperatureGerman(int language);
+bool displaySocGerman(int language);
+bool dispalySoc(int language);
+bool displayChargeRateGerman(int language);
+bool dispalyChargeRate(int language);
 
 bool displayTemperatureGerman(int language){
   if(language == 2){
@@ -53,7 +58,7 @@ bool dispalyChargeRate(int language){
 
 int tempcheck(float temperature,int language){
     if(temperature < 0 || temperature > 45){
-        displayTemperature(language);
+        dispalyTemperature(language);
         return 0;
     }
     return 1;
