@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <assert.h>
-#include "printMessage.h"
+#include "printChargeRate.h"
+#include "printSocState.h"
+#include "printTemperatureState.h"
 
 int tempcheck(float temperature,int language){
     if(temperature < 0 || temperature > 45){
