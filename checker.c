@@ -21,7 +21,7 @@ bool dispalyTemperature(int language){
     printf("Temperature out of range!\n");
     return true;
   }
-  displayTemperatureGerman(language);
+  return displayTemperatureGerman(language);
 }
 
 bool displaySocGerman(int language){
@@ -37,7 +37,7 @@ bool dispalySoc(int language){
     printf("State of Charge out of range!\n");
     return true;
   }
-  displaySocGerman(language);
+  return displaySocGerman(language);
 }
 
 bool displayChargeRateGerman(int language){
@@ -53,7 +53,7 @@ bool dispalyChargeRate(int language){
     printf("Charge Rate out of range!\n");
     return true;
   }
-  displayChargeRateGerman(language);
+  return displayChargeRateGerman(language);
 }
 
 int tempcheck(float temperature,int language){
