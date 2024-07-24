@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+bool dispalyTemperature(int language);
+
 bool displayTemperatureGerman(int language){
   if(language == 2){
     printf("Temperatur außerhalb des zulässigen Bereichs!\n");
