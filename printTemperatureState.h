@@ -8,7 +8,7 @@ bool displayTemperatureGerman(int language){
     printf("Temperatur außerhalb des zulässigen Bereichs!\n");
     return true;
   }
-  //addition of language is possible in future here
+  return false;//addition of language is possible in future here
 }
 
 bool dispalyTemperature(int language){
