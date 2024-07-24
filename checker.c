@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
+#include <stdbool.h>
 #include "printChargeRateState.h"
 #include "printSocState.h"
 #include "printTemperatureState.h"
