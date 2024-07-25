@@ -1,5 +1,8 @@
 # paradigm-shift-c
 
+# Feature added
+extension 2
+
 # Programming Paradigms
 
 Electric Vehicles have BMS - Battery Management Systems
