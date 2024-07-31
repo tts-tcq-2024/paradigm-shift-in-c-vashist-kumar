@@ -6,7 +6,7 @@ bool temperatureStateGerman(int language){
   return false;//addition of language is possible in future here
 }
 
-bool temperatureStateEnglish(int language){
+bool temperatureStateMessage(int language){
   if(language == 1){
     printf("Temperature out of range!\n");
     return true;
