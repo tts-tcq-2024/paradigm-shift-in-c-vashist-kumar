@@ -1,4 +1,4 @@
-bool displaySocGerman(int language){
+bool socStateGerman(int language){
   if(language == 2){
     printf("Ladezustand außerhalb des Bereichs!\n");
     return true;
@@ -6,7 +6,7 @@ bool displaySocGerman(int language){
   return false;//addition of language is possible in future here
 }
 
-bool displaySoc(int language){
+bool socStateEnglish(int language){
   if(language == 1){
     printf("State of Charge out of range!\n");
     return true;
