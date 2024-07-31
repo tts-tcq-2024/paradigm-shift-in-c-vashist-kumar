@@ -1,6 +1,3 @@
-#include "socStateMessage.h"
-#include "chargeRateStateMessage.h"
-
 bool temperatureStateGerman(int language){
   if(language == 2){
     printf("Temperatur außerhalb des zulässigen Bereichs!\n");
