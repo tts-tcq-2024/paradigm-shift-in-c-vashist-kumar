@@ -19,13 +19,7 @@ bool temperatureStateMessage(int language){
 
 
 
-int soccheck(float soc,int language){
-    if(soc < 20 || soc > 80){
-        socStateMessage(language);
-        return 0;
-    }
-    return 1;
-}
+
 int chargecheck(float chargeRate,int language){
     if(chargeRate > 0.8){
          chargeRateStateMessage(language);
