@@ -1,4 +1,5 @@
 #include "chargeRateStateMessage.h"
+#include "printMessage.h"
 
 int chargeRatecheck(float chargeRate,int language){
     if(chargeRate > 0.8){
