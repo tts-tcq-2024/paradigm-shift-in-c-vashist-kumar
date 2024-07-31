@@ -15,26 +15,23 @@ bool temperatureStateMessage(int language){
 }
 
 
-
-
-
 int tempcheck(float temperature,int language){
     if(temperature < 0 || temperature > 45){
-        dispalyTemperature(language);
+        temperatureStateMessage(language);
         return 0;
     }
     return 1;
 }
 int soccheck(float soc,int language){
     if(soc < 20 || soc > 80){
-        displaySoc(language);
+        socStateMessage(language);
         return 0;
     }
     return 1;
 }
 int chargecheck(float chargeRate,int language){
     if(chargeRate > 0.8){
-         displayChargeRate(language);
+         chargeRateStateMessage(language);
         return 0;
     }
     return 1;
