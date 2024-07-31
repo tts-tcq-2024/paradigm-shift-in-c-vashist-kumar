@@ -11,5 +11,5 @@ bool socStateMessage(int language){
     printf("State of Charge out of range!\n");
     return true;
   }
-  return displaySocGerman(language);
+  return socStateGerman(language);
 }
