@@ -1,6 +1,8 @@
+#include "printMessage.h"
+
 bool socStateGerman(int language){
   if(language == 2){
-    printf("Ladezustand außerhalb des Bereichs!\n");
+    printMessage("Ladezustand außerhalb des Bereichs!");
     return true;
   }
   return false;//addition of language is possible in future here
@@ -8,7 +10,7 @@ bool socStateGerman(int language){
 
 bool socStateMessage(int language){
   if(language == 1){
-    printf("State of Charge out of range!\n");
+    printMessage("State of Charge out of range!");
     return true;
   }
   return socStateGerman(language);
