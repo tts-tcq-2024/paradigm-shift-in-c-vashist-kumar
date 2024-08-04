@@ -17,4 +17,5 @@ int main() {
     assert(!batteryIsOk(36, 85, 0.8,1));
     assert(!batteryIsOk(50, 46, 0,2));
     assert(batteryIsOk(16, 44, 0.5,1));
+    test_printMsg();
 }
