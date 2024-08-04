@@ -5,6 +5,6 @@ void printMsg(const char *message) {
     printf("%s\n", message);
 }
 
-void (*printMessage)(const char *message)
+void (*printMessage)(const char *message);
 
 printMessage = &printMsg;
