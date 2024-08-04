@@ -13,4 +13,7 @@ int main() {
     assert(batteryIsOk(25, 70, 0.7,1));
     assert(batteryIsOk(25, 70, 0.7,2));
     assert(!batteryIsOk(50, 85, 0,1));
+    assert(!batteryIsOk(36, 85, 0.8,1));
+    assert(!batteryIsOk(50, 46, 0,2));
+    assert(!batteryIsOk(16, 44, 0.5,1));
 }
