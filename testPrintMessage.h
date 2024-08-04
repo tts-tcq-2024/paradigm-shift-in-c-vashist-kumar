@@ -1,30 +1,27 @@
-#include <stdarg.h>
-#include <stddef.h>
-#include <setjmp.h>
+void test_printMsg() {
+    // Redirect stdout to a file
+    FILE *fp = freopen("test_output.txt", "w", stdout);
+    assert(fp != NULL);
 
-// Mocked function
-void mock_printMsg(const char *message) {
-    check_expected(message);
-}
+    // Call the function
+    printMsg("Hello, world!");
 
-// Function pointer
-void (*printMessagemock)(const char *message) = mock_printMsg;
+    // Close the file and reset stdout
+    fclose(fp);
+    fp = freopen("/dev/tty", "a", stdout);
+    assert(fp != NULL);
 
-// Unit test function
-static void testPrintMsg(void **state) {
-    (void) state; // unused variable
+    // Read the output from the file
+    char buffer[256];
+    fp = fopen("test_output.txt", "r");
+    assert(fp != NULL);
+    fgets(buffer, sizeof(buffer), fp);
+    fclose(fp);
 
-    // Set expected message
-    expect_string(mock_printMsg, message, "Hello, World!");
+    // Check the output
+    assert(strcmp(buffer, "Hello, world!\n") == 0);
 
-    // Call the function pointer
-    printMessagemock("Hello, World!");
-}
+    // Cleanup
+    remove("test_output.txt");
 
-int main(void) {
-    const struct CMUnitTest tests[] = {
-        cmocka_unit_test(testPrintMsg),
-    };
-
-    return cmocka_run_group_tests(tests, NULL, NULL);
 }
