@@ -17,10 +17,7 @@
 //   return temperatureStateGerman(language);
 // }
 
-// bool tempmessage(int language){
-// printMessage(&array[language]);
-//   return true;
-// }
+
 
 
 
