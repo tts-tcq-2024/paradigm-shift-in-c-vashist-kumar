@@ -21,3 +21,11 @@ static void testPrintMsg(void **state) {
     // Call the function pointer
     printMessagemock("Hello, World!");
 }
+
+int main(void) {
+    const struct CMUnitTest tests[] = {
+        cmocka_unt_test(testPrintMsg),
+    };
+
+    return cmocka_run_group_tests(tests, NULL, NULL);
+}
