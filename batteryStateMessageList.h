@@ -1,11 +1,3 @@
-const char *batteryStateMessageEnglish[] = {
-"Temperature out of range!",
-"State of Charge out of range!",
-"Charge Rate out of range!"
-}
-
-const char *batteryStateMessageGerman[] = {
-"Temperatur außerhalb des zulässigen Bereichs!",
-"Ladezustand außerhalb des Bereichs!",
-"Laderate außerhalb des Bereichs!"
-}
+const char *temperatureMessage[] = {"","Temperature out of range!", "Temperatur außerhalb des zulässigen Bereichs!"};
+const char *socMessage[] = {"","State of Charge out of range!", "Ladezustand außerhalb des Bereichs!"};
+const char *chargeRateMessage[] = {"", "Charge Rate out of range!", "Laderate außerhalb des Bereichs!"};
