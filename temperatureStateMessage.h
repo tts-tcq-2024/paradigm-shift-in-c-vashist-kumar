@@ -2,7 +2,7 @@
 #include "batteryStateMessageList.h"
 
 bool temperatureStateMessage(int language){
-  printMessage(&temperatureMessage[language]);
+  printMessage(temperatureMessage[language]);
   return true;
 }
 
