@@ -1,4 +1,4 @@
 bool chargeRateStateMessage(int language){
-  printMessage(&chargeRateMessage[language]);
+  printMessage(chargeRateMessage[language]);
   return true;
 }
