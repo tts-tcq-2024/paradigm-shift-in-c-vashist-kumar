@@ -4,6 +4,7 @@
 #include "temperatureStateCheck.h"
 #include "chargeRateStateCheck.h"
 #include "socStateCheck.h"
+#include "testPrintMessage.h"
 
 int batteryIsOk(float temperature, float soc, float chargeRate, int language) {
    return tempcheck(temperature,language) && soccheck(soc,language) && chargeRatecheck(chargeRate,language);
