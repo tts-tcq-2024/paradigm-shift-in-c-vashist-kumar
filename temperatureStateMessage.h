@@ -1,5 +1,5 @@
 #include "printMessage.h"
-#include "batteryStateMessage.h"
+#include "batteryStateMessageList.h"
 
 bool temperatureStateMessage(int language){
   printMessage(&temperatureMessage[language]);
