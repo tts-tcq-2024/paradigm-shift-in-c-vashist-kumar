@@ -1,6 +1,6 @@
 #include "temperatureStateMessage.h"
 
-int tempCheck(float temperature,int language){
+int tempcheck(float temperature,int language){
     if(temperature < 0 || temperature > 45){
         temperatureStateMessage(language);
         return 0;
