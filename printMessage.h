@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-void printMessage(const char *statement) {
-    printf("%s\n", statement);
+void printMsg(const char *message) {
+    printf("%s\n", message);
 }
+
+void (*printMessage)(const char *message) = printMsg;
