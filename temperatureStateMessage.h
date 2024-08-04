@@ -16,6 +16,10 @@ bool temperatureStateMessage(int language){
   return temperatureStateGerman(language);
 }
 
+bool tempmessage(int language){
+printmessage(&array[language]);
+}
+
 
 
 
