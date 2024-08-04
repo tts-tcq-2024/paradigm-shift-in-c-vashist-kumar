@@ -24,7 +24,7 @@ static void testPrintMsg(void **state) {
 
 int main(void) {
     const struct CMUnitTest tests[] = {
-        cmocka_unt_test(testPrintMsg),
+        cmocka_unit_test(testPrintMsg),
     };
 
     return cmocka_run_group_tests(tests, NULL, NULL);
