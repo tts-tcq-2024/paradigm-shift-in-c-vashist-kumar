@@ -4,7 +4,7 @@
 #include "temperatureStateCheck.h"
 #include "chargeRateStateCheck.h"
 #include "socStateCheck.h"
-#include "testPrintMessage"
+#include "testPrintMessage.h"
 
 
 int batteryIsOk(float temperature, float soc, float chargeRate, int language) {
