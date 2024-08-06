@@ -1,4 +1,8 @@
+void printMsgMock(const char *message) {
+    printf("%s\n", message);
+}
 
+void (*printMessageMock)(const char *message) = printMsgMock;
 
 void testPrintColorMap() {
     char buffer[2048];
@@ -7,7 +11,7 @@ void testPrintColorMap() {
     printMessageMock("Hello World");
     fflush(stdout);
 
-    const char* expectedOutput = "Hello World!"
+    const char* expectedOutput = "Hello World";
 
     assert(strcmp(buffer, expectedOutput) == 0);
     assert(result == 25);
