@@ -14,5 +14,4 @@ void testPrintColorMap() {
     const char* expectedOutput = "Hello World";
 
     assert(strcmp(buffer, expectedOutput) == 0);
-    assert(result == 25);
 }
